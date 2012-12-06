@@ -92,7 +92,7 @@ function activatePage(page){
 	$(".header").css({'position':'relative','z-index':'100'});
 	$(pageId).animate({left: 0, top: 4}, speed, function() {
     	$(oldpageId).css("display","none");
-    	$(pageId).css({'z-index':'1'});
+    	$(pageId).css({"top":0,'position':'relative','z-index':'1'});
     });
     $(oldpageId+"bottom").fadeOut(speed, function() {
 	    $(pageId+"bottom").fadeIn(speed);
