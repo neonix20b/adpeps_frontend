@@ -290,7 +290,7 @@ float: right;
 
 }
 #page3{
-	background:#DDDDDD url(background4.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
+	background:#DDDDDD url(bg_pattern4.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
 	padding-top: 120px;
 	padding-left: 60px;
 	padding-right: 60px;
@@ -318,7 +318,7 @@ float: right;
 }
 .partners{
 	width: 100%;
-	background:#DDDDDD url(bg_pattern.png) repeat; /*
+	background:#DDDDDD url(bg_pattern.png) repeat;
 }
 
 .footer{
