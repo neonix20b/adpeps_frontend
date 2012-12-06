@@ -1,7 +1,8 @@
 <h1 style="color: #313c41;">Интересные факты</h1>
-<div id="page3">
+<div class="facts">
 	<% @news.each do |n| %>
 <div>
+	<%= image_tag n.img_url %><br/>
 	<h2><%= n.title %></h2><br/>
 
 	<%=raw n.post_short(25) %>
@@ -10,5 +11,11 @@
 
 </div>
 	<% end %>
-
+</div>
+<div class="partners">
+	<%= image_tag "/assets/partners1.png" %>
+	<%= image_tag "/assets/partners2.png" %>
+	<%= image_tag "/assets/partners3.png" %>
+	<%= image_tag "/assets/partners4.png" %>
+	<%= image_tag "/assets/partners5.png" %>
 </div>

@@ -33,26 +33,27 @@ html{
 }
 body{
 	border-top: 4px #333333 solid;
-	background:#DDDDDD url(bg_pattern.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
 }
 .body2{
-	width: 950px;
-	margin: 0 auto;
-
 }
 .logo{
 	float: left;
 	margin-top: 20px;
 }
+.header{
+	width: 950px;
+	margin: 0 auto;
+
+}
 /*	MENU */
-.menu{
+.header .menu{
 	float: left;
 	margin: 10px 0px 0px 100px;
 }
-.menu .menu-item{
+.header .menu .menu-item{
 	float: left;
 }
-.menu .divider{
+.header .menu .divider{
 	float: left;
 	background-color: #333333;
 	width: 2px;
@@ -85,10 +86,13 @@ body{
 	color: #666666;	
 }
 .rocket{
-	position: fixed;
+	float: right;
+	display: block;
+	position: relative;
+	clear: both;
+	margin-top: 100px;
+	margin-right: 25px;
 	text-align: right;
-	width: 60px;
-	height: 120px;
 }
 .rocket ul {
 list-style: none;
@@ -104,9 +108,9 @@ float: right;
 	vertical-align: sub;
 	outline: 0;
 }
-.rocket li.active, .rocket li:hover{
+.rocket li.active{
 	background-color: #5cb75c;
-	cursor: pointer;
+
 }
 .rocket div.active{
 	float: right;
@@ -121,25 +125,51 @@ float: right;
 	text-decoration: none;
 	color: #ffffff;	
 }
+
+.content {
+	font-family: FavoritCondC;
+	font-size: 16px;
+	color: #333333;
+}
+.content h1{
+	font-family: FiveMinutes;
+	font-size: 80px;
+	color: #e9f5fa;
+	text-align: center;
+}
+
+#page0{
+	background:#DDDDDD url(bg_pattern.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
+	padding-top: 180px;
+	padding-left: 60px;
+	padding-right: 60px;
+
+}
 .youtube{
 	float:left;
 }
 .youtube h3{
 	font-family: FavoritCondC;
 	color: #ffcc00;
-	text-shadow: 2px;
-	font-size: 25px;
+	text-shadow: 1px 1px 2px black;
+	font-size: 32px;
 	margin-bottom: 27px;
 }
 .youtube h1{
 	color: #ffffff;
-	font-size: 20px;
+	font-size: 40px;
 	margin-top: 38px;
+	font-family: FavoritCondC;
+	text-shadow: 1px 1px 2px black;
+	text-align: left;
+
 }
 .youtube h2{
 	color: #ffffff;
-	font-size: 47px;
+	font-size: 49px;
 	margin-top: 24px;
+		text-shadow: 1px 1px 2px black;
+
 }
 .side {
 	float: right;
@@ -148,27 +178,16 @@ float: right;
 	margin-top: 70px;
 	word-spacing: 33px;
 	height: 45px;
-	position: relative;
 }
 .icons img{
 	width: 25px;
 }
-/*
+
 .icons img:hover{
 	width: 45px;
 }
-*/
-.zoom_js{
-	margin: 15px;
-	float: left;
-	z-index: 10;
-}
-.iphone{
-	padding: 0px 4px;
-}
 .img1{
-	background: url(iphone1.png) no-repeat;
-	background-position: 22px 65px;
+	background: url(iphone1.png) no-repeat 18px center;
 } 
 .img2{
 	background: url(iphone2.png) no-repeat 18px center;
@@ -179,33 +198,30 @@ float: right;
 .img4{
 	background: url(iphone4.png) no-repeat 18px center;
 } 
-
-.content {
-	padding-top: 200px;
-	font-family: FavoritCondC;
-	font-size: 16px;
-	color: #333333;
-}
 .bottom_link{
 	height: 25px;
 	background: url(arrow_down.png) no-repeat center bottom;
 	text-align: center;
-	position: fixed;
-	width: 100%;
+	clear: both;
+	margin-top: 80px;
+
 }
-
-
-
-
-.content h1{
-	font-family: FiveMinutes;
-	font-size: 80px;
-	color: #e9f5fa;
+#page1{
+	padding-top: 200px;
+	background:#87baed url(background2.png) repeat;
 	text-align: center;
+
+}
+.clouds{
+	width: 1040px;
+	height: 600px;
+	margin: 80px auto;
 }
 .cloud{
 	text-align: center;
+	position: relative;
 	float: left;
+	margin: 0px 20px;
 }
 .cloud img{
 	margin-top: -30px;
@@ -235,46 +251,109 @@ float: right;
 .cloud3 img{
 	margin-left: 20px;
 }
-#page3{
-	margin-top: 100px;
+#page2{
+	background:#DDDDDD url(bg_pattern.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
+	padding-top: 180px;
+	padding-left: 60px;
+	padding-right: 60px;
 }
-#page2 div h2{
+#page2 h2{
 	color: #339900;
 	background: no-repeat left top;
 	height: 60px;
 	padding-left:60px;
 	font-size: 12pt;
 }
-#page2 div{
+#page2 .news div{
 	float:left;
 	font-size: 12pt;
+	margin: 0px 55px;
 
 }
-#page2 .one h2{
+#page2 .news .one h2{
 	background-image: url(page2icon1.png);
 }
-#page2 .two h2{
+#page2 .news .two h2{
 	background-image: url(page2icon2.png);
 }
-#page2 .three h2{
+#page2 .news .three h2{
 	background-image: url(page2icon2.png);
 }
 #page2 div ul{
 	list-style: url(line.png) outside;
 	padding-left: 20px;
 }
+#page2 .news{
+	width: 1040px;
+	height: 600px;
+	margin: 80px auto;
 
-#page3 div{
+}
+#page3{
+	background:#DDDDDD url(background4.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
+	padding-top: 120px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.facts{
+	width: 1020px;
+	height: 600px;
+	margin: 50px auto;
+}
+.facts div{
 	float: left;
 	width: 300px;
+	margin: 0 20px;
 }
-#page3 div h2 {
+.facts div h2 {
 	color: #660000;
-	font-size: 24pt;
+	font-size: 24px;
 }
-#page3 div a{
+.facts div a{
 	float: right;
 	font-family: FavoritHeavyC;
 	text-decoration: underline;
 	font-size: 10pt;
+}
+.partners{
+	width: 100%;
+	background:#DDDDDD url(bg_pattern.png) repeat; /*
+}
+
+.footer{
+	background: url(footer_bg.png) repeat;
+	height: 120px;
+	width: 100%;
+}
+.footer .menu{
+	color: #33ccff;
+}
+.footer .menu .menu-item{
+	float: left;
+}
+.footer .menu .menu-item a{
+	color: #33ccff;
+	height: 10px;
+}
+
+.footer .menu .divider{
+	float: left;
+	background-color: #33ccff;
+	width: 2px;
+	height: 100%;
+	margin: 0px 20px;
+}
+.footer .social{
+
+}
+.footer_1 {
+	border-bottom: solid 1px #5d5d5d;
+}
+.footer_2{
+	color: #66cc00;
+}
+.footer_2 .subscribe {
+	color: #999999;
+
 }

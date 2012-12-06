@@ -1,5 +1,5 @@
 class News < ActiveRecord::Base
-  attr_accessible :post, :title, :img_tag
+  attr_accessible :post, :title, :img_url
 
   def post_html
   	self.post.grep("\n","<br/>");

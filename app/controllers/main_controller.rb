@@ -1,5 +1,6 @@
 class MainController < ApplicationController
   def index
+  	 page3()
   end
 
   def page1
