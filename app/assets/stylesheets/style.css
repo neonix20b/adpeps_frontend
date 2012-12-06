@@ -279,18 +279,24 @@ float: right;
 	text-decoration: underline;
 	font-size: 10pt;
 }
-.partners{
-	width: 100%;
-	background:#DDDDDD url(bg_pattern.png) repeat;
-}
 
+.partners{
+	text-align: center;
+}
+.partners2{
+	background:#DDDDDD url(bg_pattern.jpg) repeat;
+	padding:20px 60px;
+}
+.partners img {
+	margin: 0px 20px;
+}
 .footer{
 	background: url(footer_bg.png) repeat;
 	height: 120px;
 	width: 100%;
 }
 .footer .menu{
-	color: #33ccff;
+		color: #33ccff;
 }
 .footer .menu .menu-item{
 	float: left;
@@ -308,15 +314,52 @@ float: right;
 	margin: 0px 20px;
 }
 .footer .social{
-
+	float: right;
+}
+.footer_border{
+	border-bottom: solid 1px #5d5d5d;
+	margin: 0px auto;
 }
 .footer_1 {
-	border-bottom: solid 1px #5d5d5d;
+	height: 45px;
+	padding-top: 25px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 .footer_2{
 	color: #66cc00;
+	padding: 20px 100px;
 }
 .footer_2 .subscribe {
 	color: #999999;
+}
+.payment{
+	float: left;
+	margin-right: 200px;
 
 }
+.payment img {
+	margin: 0px 2px;
+}
+.subscribe{
+	float: right;
+	font-size: 10px;
+}
+input{
+	font-size: 10px;
+	border-radius: 2px;
+	border :none;
+	padding: 2px 4px;
+
+}
+.button{
+	background-color: #2e9f01;
+	color: #ffffff;
+}
+.subscribe input{
+	margin-left: 10px;
+}
+.subscribe input .text{
+	width: 145px;
+}
+

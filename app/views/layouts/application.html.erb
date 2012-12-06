@@ -58,6 +58,7 @@
 
 </div>
 <div class="footer">
+	<div class="footer_border">
 	<div class="footer_1">
 	<div class="payment">
 		<%= image_tag "payment1.png" %>
@@ -97,11 +98,15 @@
 		<%= image_tag "social3.png" %>
 	</div>
 </div>
+</div>
 <div class="footer_2">
 	© 2012 AdPEPS Advertising network (Мобильная рекламная сеть)
 	<div class="subscribe">
 		ПОДПИШИТЕСЬ НА НАШИ НОВОСТИ
-	</div>
+
+	<%= text_field "","", :placeholder =>"ВВЕДИТЕ E-MAIL",:size=>20, :class =>"text" %>
+	<%= submit_tag "ПОДПИСАТЬСЯ",  :class =>"button" %>
+		</div>
 </div>
 </div>
 </body>
