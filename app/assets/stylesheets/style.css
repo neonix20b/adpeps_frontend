@@ -117,6 +117,7 @@ float: right;
 	font-family: FavoritCondC;
 	font-size: 16px;
 	color: #333333;
+	background:#DDDDDD url(bg_pattern.png) repeat;
 }
 .content h1{
 	font-family: FiveMinutes;
@@ -363,3 +364,21 @@ input{
 	width: 145px;
 }
 
+
+
+
+
+
+
+
+.docs {
+    list-style: none outside none;
+    margin-bottom: 50px;
+}
+.docs li.doc {
+    background: url("doc.png") no-repeat scroll left top transparent;
+    margin: 15px 0;
+    min-height: 40px;
+    padding-left: 60px;
+    padding-top: 5px;
+}
