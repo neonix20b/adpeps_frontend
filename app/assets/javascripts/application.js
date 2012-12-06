@@ -21,11 +21,6 @@ jQuery(document).ready(function($) {
 	 'beforeSend': function (xhr){
 	 xhr.setRequestHeader("Accept", "text/javascript")}  
 	});
-
-	$(".menu-item").mouseover(function () {
-	  $(this).effect("highlight", {}, 1000);
-	  $(this).css('cursor', 'pointer');
-	});
 //-------------------------------------------------
 	$(".zoom_js").mouseenter(function(){
 	  $(this).css('z-index', '10').animate({width: "+=20px", "margin":"5px"}, 200 );
@@ -56,7 +51,7 @@ function setPositions(){
 	$(".rocket").css({'position':'fixed','z-index':'10'});
 	$(".rocket").css({left: winWidth-$(".rocket").width()-10, top: winHeight/2-$(".rocket").height()/2});
 	
-	$(".bottom_link").css({'position':'fixed','z-index':'9'});
+	$(".bottom_link").css({'position':'fixed'});
 	$(".bottom_link").css({left: 0, top: winHeight-$(".bottom_link").height()-10});
 };
 function move_iphone(pos){
@@ -64,6 +59,7 @@ function move_iphone(pos){
 };
 function activatePage(page){
 	if(oldPage==page)return;
+	var speed=500;
 	var winWidth=$(window).width();
 	var winHeight=$(window).height();
 	var pageId = "#page"+page;
@@ -80,7 +76,7 @@ function activatePage(page){
 
 	$(pageId).css("display","block");
 	$(pageId+"rocket").addClass("active");
-	$("#rocket_png").css("margin-top",page*27-7);
+	$("#rocket_png").animate({"margin-top":page*27-7},speed);
 
 	$(pageId).css("height", winHeight);
 	
@@ -90,12 +86,16 @@ function activatePage(page){
 		return;
 	}
 	$(oldpageId).css("display","block");
-	$(pageId).css("height", winHeight);
+	$(pageId).css({"height":winHeight,"width":winWidth});
 	$(pageId).css({'position':'fixed','z-index':'10'});
 	$(pageId).css({left: 0, top: winHeight});
-	$(pageId).animate({left: 0, top: 2}, 2000, function() {
+	$(".header").css({'position':'relative','z-index':'100'});
+	$(pageId).animate({left: 0, top: 4}, speed, function() {
     	$(oldpageId).css("display","none");
-    	$(pageId).css({'position':'relative','z-index':'1'});
+    	$(pageId).css({'z-index':'1'});
     });
+    $(oldpageId+"bottom").fadeOut(speed, function() {
+	    $(pageId+"bottom").fadeIn(speed);
+	});
 	oldPage=page;
 };
