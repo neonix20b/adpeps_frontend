@@ -85,15 +85,6 @@ body{
 
 	color: #666666;	
 }
-.rocket{
-	float: right;
-	display: block;
-	position: relative;
-	clear: both;
-	margin-top: 100px;
-	margin-right: 25px;
-	text-align: right;
-}
 .rocket ul {
 list-style: none;
 float: right;
@@ -107,10 +98,6 @@ float: right;
 	margin-bottom: 10px;
 	vertical-align: sub;
 	outline: 0;
-}
-.rocket li.active{
-	background-color: #5cb75c;
-
 }
 .rocket div.active{
 	float: right;
@@ -181,30 +168,6 @@ float: right;
 }
 .icons img{
 	width: 25px;
-}
-
-.icons img:hover{
-	width: 45px;
-}
-.img1{
-	background: url(iphone1.png) no-repeat 18px center;
-} 
-.img2{
-	background: url(iphone2.png) no-repeat 18px center;
-} 
-.img3{
-	background: url(iphone3.png) no-repeat 18px center;
-} 
-.img4{
-	background: url(iphone4.png) no-repeat 18px center;
-} 
-.bottom_link{
-	height: 25px;
-	background: url(arrow_down.png) no-repeat center bottom;
-	text-align: center;
-	clear: both;
-	margin-top: 80px;
-
 }
 #page1{
 	padding-top: 200px;

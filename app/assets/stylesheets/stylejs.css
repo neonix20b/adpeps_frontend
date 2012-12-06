@@ -1,0 +1,31 @@
+.rocket{
+	position: fixed;
+	text-align: right;
+	width: 60px;
+	height: 120px;
+}
+.rocket li.active, .rocket li:hover{
+	background-color: #5cb75c;
+	cursor: pointer;
+}
+.zoom_js{
+	margin: 15px;
+	float: left;
+	z-index: 10;
+}
+.iphone{
+	padding: 0px 4px;
+}
+.img1{
+	background: url(iphone1.png) no-repeat;
+	background-position: 22px 65px;
+} 
+.bottom_link{
+	height: 25px;
+	background: url(arrow_down.png) no-repeat center bottom;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 10px;
+	left: 10px;
+}
