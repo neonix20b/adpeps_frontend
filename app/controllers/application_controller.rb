@@ -1,0 +1,8 @@
+class ApplicationController < ActionController::Base
+  protect_from_forgery
+  layout proc{ |c| c.request.xhr? ? false : "application" }
+
+  def default_url_options(options=nil)
+    { :format => 'html' }
+  end
+end

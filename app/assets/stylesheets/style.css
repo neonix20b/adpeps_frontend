@@ -1,0 +1,280 @@
+@font-face {
+    font-family: FavoritHeavyC; /* Имя шрифта */
+    src: url(/FavoritHeavyC.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+	font-family: FavoritCondC; 
+    src: url(/FavoritCondC.otf); 
+  }
+@font-face {
+	font-family: FiveMinutes; 
+    src: url(/FiveMinutes.otf); 
+  }
+*{
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5{
+	font-weight: 100;
+	font-family: FavoritHeavyC;
+} 
+a, a:active{
+	text-decoration: none;
+	color: #333333;
+}
+a:hover{
+	text-decoration: underline;
+	color: #333333;
+}
+
+html{
+	font-family: FavoritHeavyC;
+	font-size: 9pt;
+}
+body{
+	border-top: 4px #333333 solid;
+	background:#DDDDDD url(bg_pattern.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
+}
+.body2{
+	width: 950px;
+	margin: 0 auto;
+
+}
+.logo{
+	float: left;
+	margin-top: 20px;
+}
+/*	MENU */
+.menu{
+	float: left;
+	margin: 10px 0px 0px 100px;
+}
+.menu .menu-item{
+	float: left;
+}
+.menu .divider{
+	float: left;
+	background-color: #333333;
+	width: 2px;
+	height: 100%;
+	margin: 0px 10px;
+}
+/* END OF MENU */
+.menu-right{
+	float:right;
+}
+.login{
+	background-color: #333333;
+	color: #ffffff;
+	padding: 6px 15px 13px;
+}
+.login a{
+	color: #ffffff;
+}
+.lang{
+	float: right;
+	margin-top:10px;
+	color: #333333;
+	padding-right: 10px;
+	word-spacing: 10px; 
+}
+.lang a{
+	text-decoration: underline;
+	font-size: 8pt;
+
+	color: #666666;	
+}
+.rocket{
+	position: fixed;
+	text-align: right;
+	width: 60px;
+	height: 120px;
+}
+.rocket ul {
+list-style: none;
+float: right;
+}
+.rocket li {
+	background-color: #b75c5c;
+	border: #fafafa solid 2px;
+	border-radius:20px;
+	font-size: 8px;
+	padding: 1px 4px;
+	margin-bottom: 10px;
+	vertical-align: sub;
+	outline: 0;
+}
+.rocket li.active, .rocket li:hover{
+	background-color: #5cb75c;
+	cursor: pointer;
+}
+.rocket div.active{
+	float: right;
+	margin-right: 10px;
+	margin-top: -7px;
+	background-image: url(rocket.png);
+	height: 32px;
+	width: 22px;
+	opacity: 0.8;
+}
+.rocket li a{
+	text-decoration: none;
+	color: #ffffff;	
+}
+.youtube{
+	float:left;
+}
+.youtube h3{
+	font-family: FavoritCondC;
+	color: #ffcc00;
+	text-shadow: 2px;
+	font-size: 25px;
+	margin-bottom: 27px;
+}
+.youtube h1{
+	color: #ffffff;
+	font-size: 20px;
+	margin-top: 38px;
+}
+.youtube h2{
+	color: #ffffff;
+	font-size: 47px;
+	margin-top: 24px;
+}
+.side {
+	float: right;
+}
+.icons{
+	margin-top: 70px;
+	word-spacing: 33px;
+	height: 45px;
+	position: relative;
+}
+.icons img{
+	width: 25px;
+}
+/*
+.icons img:hover{
+	width: 45px;
+}
+*/
+.zoom_js{
+	margin: 15px;
+	float: left;
+	z-index: 10;
+}
+.iphone{
+	padding: 0px 4px;
+}
+.img1{
+	background: url(iphone1.png) no-repeat;
+	background-position: 22px 65px;
+} 
+.img2{
+	background: url(iphone2.png) no-repeat 18px center;
+} 
+.img3{
+	background: url(iphone3.png) no-repeat 18px center;
+} 
+.img4{
+	background: url(iphone4.png) no-repeat 18px center;
+} 
+
+.content {
+	padding-top: 200px;
+	font-family: FavoritCondC;
+	font-size: 16px;
+	color: #333333;
+}
+.bottom_link{
+	height: 25px;
+	background: url(arrow_down.png) no-repeat center bottom;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+}
+
+
+
+
+.content h1{
+	font-family: FiveMinutes;
+	font-size: 80px;
+	color: #e9f5fa;
+	text-align: center;
+}
+.cloud{
+	text-align: center;
+	float: left;
+}
+.cloud img{
+	margin-top: -30px;
+	margin-bottom: 20px;
+}
+.cloud1{
+	background: url(cloud1.png) no-repeat center bottom;
+	width: 304px;
+	height: 209px;
+	color: #ff9900;
+}
+.cloud2{
+	background: url(cloud2.png) no-repeat center bottom;
+	width: 304px;
+	height: 217px;
+	color: #3399ff;
+}
+.cloud3{
+	background: url(cloud3.png) no-repeat center bottom;
+	width: 304px;
+	height: 218px;
+	color: #cc3333;
+}
+.cloud2 img{
+	margin-left: 10px;
+}
+.cloud3 img{
+	margin-left: 20px;
+}
+#page3{
+	margin-top: 100px;
+}
+#page2 div h2{
+	color: #339900;
+	background: no-repeat left top;
+	height: 60px;
+	padding-left:60px;
+	font-size: 12pt;
+}
+#page2 div{
+	float:left;
+	font-size: 12pt;
+
+}
+#page2 .one h2{
+	background-image: url(page2icon1.png);
+}
+#page2 .two h2{
+	background-image: url(page2icon2.png);
+}
+#page2 .three h2{
+	background-image: url(page2icon2.png);
+}
+#page2 div ul{
+	list-style: url(line.png) outside;
+	padding-left: 20px;
+}
+
+#page3 div{
+	float: left;
+	width: 300px;
+}
+#page3 div h2 {
+	color: #660000;
+	font-size: 24pt;
+}
+#page3 div a{
+	float: right;
+	font-family: FavoritHeavyC;
+	text-decoration: underline;
+	font-size: 10pt;
+}

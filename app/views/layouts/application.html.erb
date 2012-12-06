@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AdpepsFrontend</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="body2">
+	<div class="header">
+		<div class="logo">
+			<a href="#"><%= image_tag "logo.png" %></a>
+		</div>
+		<div class="menu">
+			<div class="menu-item">
+				<a href="#">МОБИЛЬНАЯ РЕКЛАМА</a>
+			</div>
+			<div class="divider">&nbsp;</div>
+			<div class="menu-item">
+				<a href="#">ПЛОЩАДКАМ</a>
+			</div>
+			<div class="divider">&nbsp;</div>
+			<div class="menu-item">
+				<a href="#">ВОПРОСЫ</a>
+			</div>
+			<div class="divider">&nbsp;</div>
+			<div class="menu-item">
+				<a href="#">КОНТАКТЫ</a>
+			</div>
+		</div>
+		<div class="menu-right">
+		<div class="login">
+			<a href="#">ВОЙТИ</a> или <a href="#">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+		</div>
+		<div class="lang">
+			RUS
+			<a href="#">ENG</a>
+		</div>
+	</div>
+</div>
+	<div class="content">
+	<%= yield %>
+</div>
+
+
+	<div class="rocket">
+		<ul>
+			<li class="active"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+		</ul>
+				<div class="active"></div>
+
+	</div>
+	<div class="footer">
+	</div>
+</div>
+</body>
+</html>

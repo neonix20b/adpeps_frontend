@@ -1,0 +1,14 @@
+<h1 style="color: #313c41;">Интересные факты</h1>
+<div id="page3">
+	<% @news.each do |n| %>
+<div>
+	<h2><%= n.title %></h2><br/>
+
+	<%=raw n.post_short(25) %>
+</br>
+	<%= link_to "ЧИТАТЬ ДАЛЕЕ", n %>
+
+</div>
+	<% end %>
+
+</div>
