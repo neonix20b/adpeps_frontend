@@ -118,8 +118,6 @@ float: right;
 	font-size: 16px;
 	color: #333333;
 	background:#DDDDDD url(bg_pattern.png) repeat;
-	padding: 150px 200px 50px 200px;
-
 }
 .content h1{
 	font-family: FiveMinutes;
@@ -130,6 +128,7 @@ float: right;
 
 #page0{
 	background:#DDDDDD url(bg_pattern.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
+	padding-top: 180px;
 	padding-left: 60px;
 	padding-right: 60px;
 
@@ -172,6 +171,7 @@ float: right;
 	width: 25px;
 }
 #page1{
+	padding-top: 200px;
 	background:#87baed url(background2.png) repeat;
 	text-align: center;
 
@@ -217,6 +217,7 @@ float: right;
 }
 #page2{
 	background:#DDDDDD url(bg_pattern.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
+	padding-top: 180px;
 	padding-left: 60px;
 	padding-right: 60px;
 }
@@ -254,6 +255,7 @@ float: right;
 }
 #page3{
 	background:#DDDDDD url(bg_pattern4.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
+	padding-top: 120px;
 	padding-left: 60px;
 	padding-right: 60px;
 }
