@@ -1,25 +1,16 @@
-<h1>Listing news</h1>
+<div id="page">
+<h3>Новости</h3>
 
 <table>
-  <tr>
-    <th>Title</th>
-    <th>Post</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
 <% @news.each do |news| %>
   <tr>
-    <td><%= news.title %></td>
-    <td><%= news.post %></td>
-    <td><%= link_to 'Show', news %></td>
-    <td><%= link_to 'Edit', edit_news_path(news) %></td>
-    <td><%= link_to 'Destroy', news, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= image_tag news.img_url, :style => "width:300px;height:168px;"%></td>
+    <td><b><%= news.title %></b><br/><br/>
+    <%= news.post_short(50) %><br/><br/><%= link_to 'далее', news %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New News', new_news_path %>
+</div>

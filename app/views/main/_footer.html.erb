@@ -10,34 +10,36 @@
 	</div>
 	<div class="menu">
 		<div class="menu-item">
-			<a href="#">О НАС</a>
+			<%= link_to "О НАС", {:action => "about" }%>
 		</div>
 		<div class="divider">&nbsp;</div>
 		<div class="menu-item">
-			<a href="#">НОВОСТИ</a>
+			<%= link_to "НОВОСТИ", {:controller => "news" ,:action => "index" }%>
 		</div>
 		<div class="divider">&nbsp;</div>
 		<div class="menu-item">
-			<a href="#">ПОДДЕРЖКА</a>
+			<%= link_to "ПОДДЕРЖКА", {:action => "blank" }%>
 		</div>
 		<div class="divider">&nbsp;</div>
 		<div class="menu-item">
-			<a href="#">КОНТАКТЫ</a>
+			<%= link_to "КОНТАКТЫ", {:action => "contacts" }%>
 		</div>
 		<div class="divider">&nbsp;</div>
 		<div class="menu-item">
-			<a href="#">РАБОТА У НАС</a>
+			<%= link_to "РАБОТА У НАС", {:action => "work" }%>
 		</div>
 		<div class="divider">&nbsp;</div>
 		<div class="menu-item">
-			<a href="#">ДОКУМЕНТЫ</a>
+			<%= link_to "ДОКУМЕНТЫ", {:action => "docs" }%>
 		</div>
 	</div>
 	<div class="social">
-		<%= image_tag "social1.png" %>
-		<%= image_tag "social2.png" %>
-		<%= image_tag "social3.png" %>
+		<%= link_to image_tag ("social1.png"), "http://vk.com/public41765940" %>
+		<%= link_to image_tag ("social2.png"), "http://twitter.com/Adpeppers" %>
+		<%= link_to image_tag ("social3.png"), "http://www.facebook.com/pages/Adpeps/423738674334489" %>
 	</div>
+
+
 </div>
 	</div>
 	<div class="footer_2">

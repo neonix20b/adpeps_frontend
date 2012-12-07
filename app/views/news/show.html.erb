@@ -1,15 +1,12 @@
+
+<div id="page">
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @news.title %>
-</p>
+<h3>  <%= @news.title %></h3>
 
-<p>
-  <b>Post:</b>
+	<%= image_tag @news.img_url %> <br/><br/>
+	<p>
   <%= @news.post %>
 </p>
+</div>
 
-
-<%= link_to 'Edit', edit_news_path(@news) %> |
-<%= link_to 'Back', news_index_path %>
