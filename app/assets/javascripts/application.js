@@ -73,6 +73,7 @@ function setPositions(page){
 	for (var i = 0; i < 4; i++) {
 		$("#page"+i).css({"height":bottom_height,"width":winWidth});
 	};
+	//$("#page10").css({"height":bottom_height,"width":winWidth});
 
 	$("#cb1").css({'position':'absolute','z-index':'10', "left":50, "top":150});
 	$("#cb2").css({"opacity":0.5,'position':'absolute','z-index':'10', "left":winWidth-621, "top":0});
@@ -190,7 +191,7 @@ function newPage(oldPage,page){ //как появляться
 };
 function activatePage(page){
 	setPositions(page);
-	if(oldPage==page)return;
+	if(oldPage==page || page==10)return;
 	var winWidth=$(window).width();
 	var winHeight=$(window).height();
 	var pageId = "#page"+page;
