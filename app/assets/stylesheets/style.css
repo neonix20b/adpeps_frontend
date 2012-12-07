@@ -95,7 +95,6 @@ float: right;
 	width: 20px;
 	height: 20px;
 	background: url(menu_off.png) no-repeat center center;
-	font-size: 8px;
 	padding: 1px 4px;
 	margin-bottom: 10px;
 	text-align: center;
@@ -113,8 +112,7 @@ float: right;
 .rocket li a{
 	text-decoration: none;
 	color: #ffffff;	
-	position: relative;
-	top: 6px;	
+	font-size: 10px;
 }
 
 .content {
