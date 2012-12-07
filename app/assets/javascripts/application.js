@@ -51,6 +51,9 @@ jQuery(document).ready(function($) {
 	oldPage=-1;
 	activatePage(curPage);
 //-------------------------------------------------
+	//window.setInterval(yourfunction, 10000);
+
+//function yourfunction() { alert('test'); }
 }); //document.ready
 function setPositions(page){
 	var winWidth=$(window).width();
@@ -218,6 +221,8 @@ function activatePage(page){
 	$(pageId).css({left: 0, top: winHeight});
 	$(".header").css({'position':'relative','z-index':'100'});
 	pageReplacer(oldPage,page);
+	$(oldpageId+"bottom").css({"opacity":1});
+	$(pageId+"bottom").css({"display":"none"});
     $(oldpageId+"bottom").fadeOut(speed, function() {
 	    $(pageId+"bottom").fadeIn(speed);
 	    setPositions(page);
