@@ -1,0 +1,4 @@
+С сайта было отправленно письмо в поддержку:<br/><br/>
+От кого: <%= @params[:surname] %> <%= @params[:name] %><br/>
+E-mail: <%= @params[:email] %><br/><br/>
+Текст: <%=raw @params[:message].gsub("\n","<br/>")%>

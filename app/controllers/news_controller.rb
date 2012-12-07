@@ -24,6 +24,7 @@ class NewsController < ApplicationController
   # GET /news/new
   # GET /news/new.json
   def new
+    return render :text=>'нельзя'
     @news = News.new
 
     respond_to do |format|
@@ -34,12 +35,14 @@ class NewsController < ApplicationController
 
   # GET /news/1/edit
   def edit
+    return render :text=>'нельзя'
     @news = News.find(params[:id])
   end
 
   # POST /news
   # POST /news.json
   def create
+    return render :text=>'нельзя'
     @news = News.new(params[:news])
 
     respond_to do |format|
@@ -56,6 +59,7 @@ class NewsController < ApplicationController
   # PUT /news/1
   # PUT /news/1.json
   def update
+    return render :text=>'нельзя'
     @news = News.find(params[:id])
 
     respond_to do |format|
@@ -72,6 +76,7 @@ class NewsController < ApplicationController
   # DELETE /news/1
   # DELETE /news/1.json
   def destroy
+    return render :text=>'нельзя'
     @news = News.find(params[:id])
     @news.destroy
 
