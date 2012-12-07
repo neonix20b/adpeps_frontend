@@ -14,6 +14,9 @@ class MainController < ApplicationController
   end
 
   def support
-
+    if request.post?
+      UserMailer.support_email(params).deliver
+      #return render :text => params.to_xml 
+    end
   end
 end

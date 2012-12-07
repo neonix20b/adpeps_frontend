@@ -7,16 +7,16 @@
 <% else %>
 <%= form_tag('') do -%>
 <p>
-<%= text_field "surname","", :placeholder =>"Фамилия",:size=>20, :class =>"text" %>
+<%= text_field_tag "surname","", :placeholder =>"Фамилия",:size=>20, :class =>"text" %>
 </p>
 <p>
-<%= text_field "name","", :placeholder =>"Имя",:size=>20, :class =>"text" %>
+<%= text_field_tag "name","", :placeholder =>"Имя",:size=>20, :class =>"text" %>
 </p>
 <p>
-<%= text_field "email","", :placeholder =>"E-mail",:size=>20 %>
+<%= text_field_tag "email","", :placeholder =>"E-mail",:size=>20 %>
 </p>
 <p>
-<%= text_area "message","", :placeholder =>"Вопрос",:size=>20, :row => 4 %>
+<%= text_area_tag "message","", :placeholder =>"Вопрос",:size=>20, :row => 4 %>
 </p>
 <br/>
 <%= submit_tag "ОТПРАВИТЬ",  :class =>"button" %>
