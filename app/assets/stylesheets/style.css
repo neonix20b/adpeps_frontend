@@ -174,11 +174,13 @@ float: right;
 }
 .side {
 	float: right;
+	padding: 0px 10px;
 }
 .icons{
 	margin-top: 70px;
 	word-spacing: 33px;
 	height: 45px;
+	width: 222px;
 }
 .icons img{
 	width: 25px;
@@ -257,8 +259,8 @@ float: right;
 }
 #page2 .news{
 	width: 1040px;
-	height: 600px;
 	margin: 80px auto;
+	height: 300px;
 
 }
 #page3{
@@ -295,6 +297,7 @@ float: right;
 .partners2{
 	background:#DDDDDD url(bg_pattern.jpg) repeat;
 	padding:20px 60px;
+	margin-top: 40px;
 }
 .partners img {
 	margin: 0px 20px;
