@@ -22,3 +22,12 @@
 <div id="page0bottom" class="bottom_link">
 		<a href="#" onClick="javascript: activatePage(1);">НАЧАТЬ ОЧЕНЬ ПРОСТО!</a>
 </div>
+<script type="text/javascript">
+	var mover=14;
+	window.setInterval(scrollPhone, 5000);
+	function scrollPhone() { 
+		move_iphone(mover+"px");
+		mover=mover-180;
+		if(mover < -526)mover=14; 
+	};
+</script>

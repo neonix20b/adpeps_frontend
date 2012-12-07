@@ -19,6 +19,7 @@ var oldPage;
 var minHeight=650+25;
 var speed=500;
 var curPage=0;
+
 jQuery(document).ready(function($) {
 	//Tell Rails that we’re sending a JavaScript request
 	$.ajaxSetup({  
@@ -44,9 +45,6 @@ jQuery(document).ready(function($) {
 	oldPage=-1;
 	activatePage(curPage);
 //-------------------------------------------------
-	//window.setInterval(yourfunction, 10000);
-
-//function yourfunction() { alert('test'); }
 }); //document.ready
 function setPositions(page){
 	var winWidth=$(window).width();
