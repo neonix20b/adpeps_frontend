@@ -382,9 +382,10 @@ height: 300px;
 	border-radius: 2px;
 	border :none;
 	padding: 2px 4px;
+	width: 100px;
 
 }
-.subscribe input .text{
+.subscribe .text{
 	width: 145px;
 }
 

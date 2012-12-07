@@ -2,8 +2,10 @@
 <h3>Поддержка</h3>
 Любые вопросы вы можете прислать на электронный адрес: Или заполнить формы на сайте. Мы обязательно вам ответим. <br/>
 
-
-<%= form_tag('/posts') do -%>
+<% if request.post? %>
+<br/>Спасибо, Ваше сообщение отправлено. <br/>
+<% else %>
+<%= form_tag('') do -%>
 <p>
 <%= text_field "surname","", :placeholder =>"Фамилия",:size=>20, :class =>"text" %>
 </p>
@@ -20,5 +22,7 @@
 <%= submit_tag "ОТПРАВИТЬ",  :class =>"button" %>
 
 <% end -%>
+<% end %>
 </div>
+<br/>
 <%= render :partial => "footer", :locals=>{:inc_script => true}%>

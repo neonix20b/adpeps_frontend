@@ -12,4 +12,8 @@ class MainController < ApplicationController
   def page3
   	@news = News.order("id").limit(3)
   end
+
+  def support
+
+  end
 end
