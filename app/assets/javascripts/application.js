@@ -33,17 +33,10 @@ jQuery(document).ready(function($) {
 	  $(this).css('z-index', '1').animate({width: "-=20px", "margin":"15px"}, 100 );
 	});
 //-------------------------------------------------
-/*
-	$(".redpoint_js").mouseenter(function(){
-      $(this).parent().addClass('active_js');	
-    });
-	$(".redpoint_js").mouseout(function(){
-	  $(this).parent().removeClass('active_js');
-	});
-*/
 	jQuery(window).resize(function(){
 		setPositions(oldPage);
 	});
+
 	$("#cb1").css({'display':'none'});
 	$("#cb2").css({'display':'none'});
 	$("#cb3").css({'display':'none'});
@@ -194,17 +187,17 @@ function activatePage(page){
 	if(oldPage==page || page==10)return;
 	var winWidth=$(window).width();
 	var winHeight=$(window).height();
-	var pageId = "#page"+page;
-	var oldpageId = "#page"+oldPage;
+	var pageId = "#page"+page.toString();
+	var oldpageId = "#page"+oldPage.toString();
 
 
 	for (var i = 0; i < 4; i++) {
-		$("#page"+i).css("display","none");
-		$("#page"+i+"rocket").removeClass("active");
+		$("#page"+i.toString()).css("display","none");
+		$("#page"+i.toString()+"rocket").removeClass("active");
 	};
 	
 
-	$(pageId).css("display","block");
+	$(pageId).css({"display":"block"});
 	pagesVision(page);
 	$(pageId+"rocket").addClass("active");
 	$("#rocket_png").animate({"margin-top":page*27-7},speed);
@@ -213,7 +206,6 @@ function activatePage(page){
 	
 	if(oldPage == -1){
 		oldPage=page;
-		//alert(oldPage);
 		return;
 	}
 	$(oldpageId).css("display","block");
