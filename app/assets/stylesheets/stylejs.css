@@ -14,12 +14,12 @@
 	z-index: 10;
 }
 .iphone{
-	padding: 0px 4px;
+	background: url(iphoneback.png) no-repeat;
+	background-position: 18px 65px;
+	width: 214px;
+
+
 }
-.img1{
-	background: url(iphone1.png) no-repeat;
-	background-position: 22px 65px;
-} 
 .bottom_link{
 	height: 25px;
 	background: url(arrow_down.png) no-repeat center bottom;

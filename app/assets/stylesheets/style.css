@@ -33,6 +33,7 @@ html{
 }
 body{
 	border-top: 4px #333333 solid;
+	overflow-x:hidden;
 }
 .body2{
 }
@@ -124,14 +125,26 @@ float: right;
 	font-size: 80px;
 	color: #e9f5fa;
 	text-align: center;
-}
+		text-shadow: 1px 1px 2px black;
 
+}
+#page, #page0, #page1, #page2, #page3{
+	padding-top: 160px;
+}
+#page{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 100px;
+}
 #page0{
 	background:#DDDDDD url(bg_pattern.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
-	padding-top: 180px;
-	padding-left: 60px;
-	padding-right: 60px;
+	
 
+}
+.blocks{
+	width: 960px;
+	margin:0px auto;
 }
 .youtube{
 	float:left;
@@ -171,14 +184,12 @@ float: right;
 	width: 25px;
 }
 #page1{
-	padding-top: 200px;
 	background:#87baed url(background2.png) repeat;
 	text-align: center;
 
 }
 .clouds{
 	width: 1040px;
-	height: 600px;
 	margin: 80px auto;
 }
 .cloud{
@@ -217,9 +228,6 @@ float: right;
 }
 #page2{
 	background:#DDDDDD url(bg_pattern.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
-	padding-top: 180px;
-	padding-left: 60px;
-	padding-right: 60px;
 }
 #page2 h2{
 	color: #339900;
@@ -255,26 +263,26 @@ float: right;
 }
 #page3{
 	background:#DDDDDD url(bg_pattern4.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
-	padding-top: 120px;
-	padding-left: 60px;
-	padding-right: 60px;
 }
 
 .facts{
-	width: 1020px;
-	height: 600px;
-	margin: 50px auto;
+	margin: 0px auto;
+		width: 1020px;
+
 }
-.facts div{
+.facts2{
+	display: inline-block;	
+}
+.facts2 div{
 	float: left;
 	width: 300px;
 	margin: 0 20px;
 }
-.facts div h2 {
+.facts2 div h2 {
 	color: #660000;
 	font-size: 24px;
 }
-.facts div a{
+.facts2 div a{
 	float: right;
 	font-family: FavoritHeavyC;
 	text-decoration: underline;
@@ -363,13 +371,6 @@ input{
 .subscribe input .text{
 	width: 145px;
 }
-
-
-
-
-
-
-
 
 .docs {
     list-style: none outside none;
