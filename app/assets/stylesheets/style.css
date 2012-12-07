@@ -193,6 +193,8 @@ float: right;
 .clouds{
 	width: 1040px;
 	margin: 80px auto;
+	position: relative;
+	z-index: 100;
 }
 .cloud{
 	text-align: center;

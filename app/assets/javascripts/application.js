@@ -14,9 +14,11 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require_tree .
+
 var oldPage;
 var minHeight=650+25;
 var speed=500;
+var curPage=0;
 jQuery(document).ready(function($) {
 	//Tell Rails that we’re sending a JavaScript request
 	$.ajaxSetup({  
@@ -47,7 +49,7 @@ jQuery(document).ready(function($) {
 	$("#cb3").css({'display':'none'});
 	$("#cb4").css({'display':'none'});
 	oldPage=-1;
-	activatePage(0);
+	activatePage(curPage);
 //-------------------------------------------------
 }); //document.ready
 function setPositions(page){
@@ -78,16 +80,18 @@ function move_iphone(pos){
 	$(".iphone").animate({'background-position': pos}, 200 );
 };
 function pagesVision(page){
-	$("#footer").css("display","none");
+	$("#footer").css("display","block"); 
 	switch(page){
-		case 0: 
+		case 0:
+			$("#footer").css("display","none"); 
 			break;
 		case 1: 
+			$("#footer").css("display","none");
 			break;
 		case 2: 
+			$("#footer").css("display","none");
 			break;
 		case 3: 
-			$("#footer").css("display","block"); 
 			break;
 	}
 };
@@ -216,6 +220,7 @@ function activatePage(page){
 	pageReplacer(oldPage,page);
     $(oldpageId+"bottom").fadeOut(speed, function() {
 	    $(pageId+"bottom").fadeIn(speed);
+	    setPositions(page);
 	});
 	oldPage=page;
 };
