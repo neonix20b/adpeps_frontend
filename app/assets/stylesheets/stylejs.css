@@ -13,10 +13,15 @@
 	float: left;
 	z-index: 10;
 }
+.iphone2{
+	width:3px;
+	background: url(iphonept1.png);
+	padding-left: 3px;
+}
 .iphone{
 	background: url(iphoneback.png) no-repeat;
-	background-position: 18px center;
-	width: 214px;
+	background-position: 14px center;
+	width: 210px;
 	padding-top: 6px;
 }
 .bottom_link{
