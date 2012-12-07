@@ -15,10 +15,9 @@
 }
 .iphone{
 	background: url(iphoneback.png) no-repeat;
-	background-position: 18px 65px;
+	background-position: 18px center;
 	width: 214px;
-
-
+	padding-top: 6px;
 }
 .bottom_link{
 	height: 25px;
@@ -28,4 +27,9 @@
 	width: 100%;
 	top: 100px;
 	left: 10px;
+	/*display: none;*/
+}
+#clouds_id{
+	position: relative;
+	z-index: 100;
 }

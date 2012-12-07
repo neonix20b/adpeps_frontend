@@ -18,19 +18,19 @@
 		</div>
 		<div class="divider">&nbsp;</div>
 		<div class="menu-item">
-			<%= link_to "ПОДДЕРЖКА", {:action => "blank" }%>
+			<%= link_to "ПОДДЕРЖКА", {:action => "blank" ,:controller => "main"}%>
 		</div>
 		<div class="divider">&nbsp;</div>
 		<div class="menu-item">
-			<%= link_to "КОНТАКТЫ", {:action => "contacts" }%>
+			<%= link_to "КОНТАКТЫ", {:action => "contacts" ,:controller => "main"}%>
 		</div>
 		<div class="divider">&nbsp;</div>
 		<div class="menu-item">
-			<%= link_to "РАБОТА У НАС", {:action => "work" }%>
+			<%= link_to "РАБОТА У НАС", {:action => "work",:controller => "main" }%>
 		</div>
 		<div class="divider">&nbsp;</div>
 		<div class="menu-item">
-			<%= link_to "ДОКУМЕНТЫ", {:action => "docs" }%>
+			<%= link_to "ДОКУМЕНТЫ", {:action => "docs",:controller => "main" }%>
 		</div>
 	</div>
 	<div class="social">
@@ -52,3 +52,9 @@
 			</div>
 	</div>
 </div>
+
+<%if defined?(inc_script) %>
+	<script type="text/javascript">
+	curPage=10;
+	</script>
+<%end%>

@@ -1,5 +1,4 @@
-
-<div id="page">
+<div id="page10">
 <p id="notice"><%= notice %></p>
 
 <h3>  <%= @news.title %></h3>
@@ -9,4 +8,6 @@
   <%= @news.post %>
 </p>
 </div>
+<%= render :partial => "main/footer", :locals=>{:inc_script => true}%>
+
 
