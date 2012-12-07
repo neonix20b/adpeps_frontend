@@ -5,11 +5,11 @@
 	height: 120px;
 }
 .rocket li.active, .rocket li:hover{
-	background-color: #5cb75c;
+	background: url(menu_on.png) no-repeat center center;
 	cursor: pointer;
 }
 .zoom_js{
-	margin: 15px;
+	margin: 10px;
 	float: left;
 	z-index: 10;
 }

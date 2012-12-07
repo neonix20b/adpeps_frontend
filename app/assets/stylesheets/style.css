@@ -17,6 +17,7 @@
 h1, h2, h3, h4, h5, b{
 	font-weight: 100;
 	font-family: FavoritHeavyC;
+	text-shadow: 2px 2px 0px rgba(100,100,100, 0.4);
 } 
 a, a:active{
 	text-decoration: none;
@@ -91,14 +92,14 @@ list-style: none;
 float: right;
 }
 .rocket li {
-	background-color: #b75c5c;
-	border: #fafafa solid 2px;
-	border-radius:20px;
+	width: 20px;
+	height: 20px;
+	background: url(menu_off.png) no-repeat center center;
 	font-size: 8px;
 	padding: 1px 4px;
 	margin-bottom: 10px;
-	vertical-align: sub;
-	outline: 0;
+	text-align: center;
+	vertical-align: middle;
 }
 .rocket div.active{
 	float: right;
@@ -112,6 +113,8 @@ float: right;
 .rocket li a{
 	text-decoration: none;
 	color: #ffffff;	
+	position: relative;
+	top: 6px;	
 }
 
 .content {
@@ -125,7 +128,6 @@ float: right;
 	font-size: 80px;
 	color: #e9f5fa;
 	text-align: center;
-	text-shadow: 1px 1px 2px black;
 	padding-bottom: 20px;
 }
 #page10, #page0, #page1, #page2, #page3{
@@ -154,7 +156,6 @@ float: right;
 h3{
 	font-family: FavoritCondC;
 	color: #ffcc00;
-	text-shadow: 1px 1px 2px black;
 	font-size: 32px;
 	margin-bottom: 27px;
 }
@@ -163,16 +164,14 @@ h3{
 	font-size: 40px;
 	margin-top: 38px;
 	font-family: FavoritCondC;
-	text-shadow: 1px 1px 2px black;
 	text-align: left;
 
 }
 .youtube h2{
+	font-family: FavoritCondC;
+	font-weight: bold;
 	color: #ffffff;
-	font-size: 49px;
-	margin-top: 24px;
-		text-shadow: 1px 1px 2px black;
-
+	font-size: 64px;
 }
 .side {
 	float: right;
@@ -180,12 +179,11 @@ h3{
 }
 .icons{
 	margin-top: 70px;
-	word-spacing: 33px;
 	height: 45px;
 	width: 222px;
 }
 .icons img{
-	width: 25px;
+	width: 35px;
 }
 #page1{
 	background:#87baed url(background2.png) repeat;

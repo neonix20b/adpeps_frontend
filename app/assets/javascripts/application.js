@@ -28,10 +28,10 @@ jQuery(document).ready(function($) {
 	});
 //-------------------------------------------------
 	$(".zoom_js").mouseenter(function(){
-	  $(this).css('z-index', '10').animate({width: "+=20px", "margin":"5px"}, 200 );
+	  $(this).css('z-index', '10').animate({width: "+=20px", "margin":"0px"}, 200 );
 	});
 	$(".zoom_js").mouseleave(function(){
-	  $(this).css('z-index', '1').animate({width: "-=20px", "margin":"15px"}, 100 );
+	  $(this).css('z-index', '1').animate({width: "-=20px", "margin":"10px"}, 100 );
 	});
 //-------------------------------------------------
 	jQuery(window).resize(function(){
@@ -44,8 +44,24 @@ jQuery(document).ready(function($) {
 	$("#cb4").css({'display':'none'});
 	oldPage=-1;
 	activatePage(curPage);
+
+	// jQuery(window).scroll(function(){
+	// 	scrolling();
+	// });
 //-------------------------------------------------
 }); //document.ready
+
+function scrolling(){
+	if (oldPage > 2 )
+		oldPage = 2;
+	var pos = $("#eof").position();
+	//alert($(window).height() + "   " + $(document).scrollTop() + "   " + pos.top );
+	 if($(window).height() + $(document).scrollTop() > pos.top ){
+	 	alert ("112");
+        //activatePage(oldPage+1);
+   }
+}
+
 function setPositions(page){
 	var winWidth=$(window).width();
 	var winHeight=$(window).height();
@@ -73,6 +89,8 @@ function setPositions(page){
 };
 function move_iphone(pos){
 	$(".iphone").animate({'background-position': pos}, 200 );
+
+
 };
 function pagesVision(page){
 	$("#footer").css("display","block"); 
@@ -198,7 +216,7 @@ function activatePage(page){
 	$(pageId).css({"display":"block"});
 	pagesVision(page);
 	$(pageId+"rocket").addClass("active");
-	$("#rocket_png").animate({"margin-top":page*27-7},speed);
+	$("#rocket_png").animate({"margin-top":page*33-7},speed);
 
 	$(pageId).css("height", winHeight);
 	
