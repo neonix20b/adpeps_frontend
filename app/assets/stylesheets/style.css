@@ -33,6 +33,7 @@ html{
 }
 body{
 	border-top: 4px #333333 solid;
+	overflow-x:hidden;
 }
 .body2{
 }
@@ -124,14 +125,19 @@ float: right;
 	font-size: 80px;
 	color: #e9f5fa;
 	text-align: center;
+	z-index: 100;
+	position: relative;
 }
-
+#page0, #page1, #page2, #page3{
+	padding-top: 160px;
+}
 #page0{
 	background:#DDDDDD url(bg_pattern.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
-	padding-top: 180px;
-	padding-left: 60px;
-	padding-right: 60px;
 
+}
+.blocks{
+	width: 960px;
+	margin:0px auto;
 }
 .youtube{
 	float:left;
@@ -171,14 +177,12 @@ float: right;
 	width: 25px;
 }
 #page1{
-	padding-top: 200px;
 	background:#87baed url(background2.png) repeat;
 	text-align: center;
 
 }
 .clouds{
 	width: 1040px;
-	height: 600px;
 	margin: 80px auto;
 }
 .cloud{
@@ -186,6 +190,7 @@ float: right;
 	position: relative;
 	float: left;
 	margin: 0px 20px;
+	z-index: 100;
 }
 .cloud img{
 	margin-top: -30px;
@@ -217,9 +222,6 @@ float: right;
 }
 #page2{
 	background:#DDDDDD url(bg_pattern.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
-	padding-top: 180px;
-	padding-left: 60px;
-	padding-right: 60px;
 }
 #page2 h2{
 	color: #339900;
@@ -255,15 +257,13 @@ float: right;
 }
 #page3{
 	background:#DDDDDD url(bg_pattern4.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
-	padding-top: 120px;
-	padding-left: 60px;
-	padding-right: 60px;
 }
 
 .facts{
 	width: 1020px;
 	height: 600px;
-	margin: 50px auto;
+	margin: 0px auto;
+	margin-top:50px;
 }
 .facts div{
 	float: left;

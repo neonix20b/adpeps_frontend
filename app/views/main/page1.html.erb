@@ -1,28 +1,34 @@
-<h1>Начать очень просто!</h1>
-<div class="clouds">
-<div class="cloud cloud1">
-	<%= image_tag "cloud1Pic.png" %><br/>
-	<b>1. ЗАРЕГЕРИСТРИРОВАТЬСЯ</b><br/>
-	<br/>
-	Укажите ваше имя, e-mail и пароль.<br/>
-	Подтвердите электронный адрес.
+<div id="clouds_id">
+	<h1>Начать очень просто!</h1>
+	<div class="clouds">
+	<div class="cloud cloud1">
+		<%= image_tag "cloud1Pic.png" %><br/>
+		<b>1. ЗАРЕГЕСТРИРОВАТЬСЯ</b><br/>
+		<br/>
+		Укажите ваше имя, e-mail и пароль.<br/>
+		Подтвердите электронный адрес.
+	</div>
+	<div class="cloud cloud2">
+		<%= image_tag "cloud2Pic.png" %><br/>
+		<b>2. СОЗДАТЬ КАМПАНИЮ</b><br/>
+		<br/>
+		Загрузить или создать рекламу,<br/>
+		определить бюджет и настроить<br/>
+		таргетинг.
+	</div>
+	<div class="cloud cloud3">
+		<%= image_tag "cloud3Pic.png" %><br/>
+		<b>3. ЗАПУСТИТЬ РЕКЛАМУ</b><br/>
+		<br/>
+		Запустите свою кампанию на сотнях<br/>
+		мобильных сайтов и приложений<br/>
+	</div>
+	</div>
 </div>
-<div class="cloud cloud2">
-	<%= image_tag "cloud2Pic.png" %><br/>
-	<b>2. СОЗДАТЬ КАМПАНИЮ</b><br/>
-	<br/>
-	Загрузить или создать рекламу,<br/>
-	определить бюджет и настроить<br/>
-	таргетинг.
-</div>
-<div class="cloud cloud3">
-	<%= image_tag "cloud3Pic.png" %><br/>
-	<b>3. ЗАПУСТИТЬ РЕКЛАМУ</b><br/>
-	<br/>
-	Запустите свою кампанию на сотнях<br/>
-	мобильных сайтов и приложений<br/>
-</div>
-</div>
+<%= image_tag "cloud_background1.png", :id=> "cb1"%>
+<%= image_tag "cloud_background2.png", :id=> "cb2"%>
+<%= image_tag "cloud_background3.png", :id=> "cb3"%>
+<%= image_tag "cloud_background4.png", :id=> "cb4"%>
 <div id="page1bottom" class="bottom_link">
-	<a href="#">ИНСТРУМЕНТЫ ДЛЯ УСПЕХА МОБИЛЬНОЙ РЕКЛАМЫ</a>
+	<a href="#" onClick="javascript: activatePage(2);">ИНСТРУМЕНТЫ ДЛЯ УСПЕХА МОБИЛЬНОЙ РЕКЛАМЫ</a>
 </div>
