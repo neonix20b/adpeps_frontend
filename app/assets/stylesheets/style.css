@@ -361,12 +361,16 @@ h3{
 	float: right;
 	font-size: 10px;
 }
-input{
-	font-size: 10px;
-	border-radius: 2px;
-	border :none;
-	padding: 2px 4px;
-
+input, textarea{
+	font-size: 16px;
+	border-radius: 4px;
+	border :solid 1px #666666;
+	padding: 2px;
+	margin:2px 4px;
+	width: 300px;
+}
+textarea{
+height: 300px;
 }
 .button{
 	background-color: #2e9f01;
@@ -374,6 +378,11 @@ input{
 }
 .subscribe input{
 	margin-left: 10px;
+		font-size: 10px;
+	border-radius: 2px;
+	border :none;
+	padding: 2px 4px;
+
 }
 .subscribe input .text{
 	width: 145px;
