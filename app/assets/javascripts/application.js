@@ -67,7 +67,6 @@ function smallBottom(){
     		//bigBottom();
     	});
 };
-
 function scrolling(){
 	if (oldPage > 2 )
 		oldPage = 2;
@@ -103,6 +102,9 @@ function setPositions(page){
 	$("#cb2").css({"opacity":0.5,'position':'absolute','z-index':'10', "left":winWidth-621, "top":0});
 	$("#cb3").css({'position':'fixed','z-index':'10', "left":winWidth-200, "top":winHeight-200});
 	$("#cb4").css({"opacity":0.5,'position':'fixed','z-index':'10', "left":0, "top":winHeight-191});
+
+	if(curPage==10 && $('body').height() <	$(window).height())
+		$('#page10').css({"height": $(window).height()-294});
 };
 function move_iphone(pos){
 	$(".iphone").animate({'background-position': pos}, 200 );
