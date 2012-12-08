@@ -4,7 +4,7 @@
 	<% @news.each do |n| %>
 <div>
 	<%= image_tag n.img_url %><br/>
-	<h2><%= n.title %></h2><br/>
+	<h4><%= n.title %></h4><br/>
 
 	<%=raw n.post_short(25) %>
 <br/>
