@@ -105,8 +105,6 @@ function setPositions(page){
 
 	if(curPage==10 && $('body').height() <	$(window).height()){
 		$('#page10').css({"height": $(window).height()-294});
-		alert($('body').height());
-		alert($(window).height());
 	}
 };
 function move_iphone(pos){
