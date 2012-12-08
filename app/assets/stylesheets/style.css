@@ -1,16 +1,47 @@
-@font-face {
-    font-family: FavoritHeavyC; /* Имя шрифта */
-    src: url(/FavoritHeavyC.otf); /* Путь к файлу со шрифтом */
+ @font-face {
+    font-family: 'FavoritExtraBoldC';
+    src: url('/favoritextraboldc.eot');
+    src: url('/favoritextraboldc.eot?#iefix') format('embedded-opentype'),
+         url('/favoritextraboldc.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-	font-family: FavoritCondC; 
-    src: url(/FavoritCondC.otf); 
-  }
+    font-family: 'FavoritHeavyC';
+    src: url('/favoritheavyc.eot');
+    src: url('/favoritheavyc.eot?#iefix') format('embedded-opentype'),
+         url('/favoritheavyc.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @font-face {
-	font-family: FiveMinutes; 
-    src: url(/FiveMinutes.otf); 
-  }
-*{
+    font-family: 'FavoritCondC';
+    src: url('/favoritcondc.eot');
+    src: url('/favoritcondc.eot?#iefix') format('embedded-opentype'),
+         url('/favoritcondc.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'favoritcondcbold';
+    src: url('/favoritcondc-bold.eot');
+    src: url('/favoritcondc-bold.eot?#iefix') format('embedded-opentype'),
+         url('/favoritcondc-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'FiveMinutes';
+    src: url('/fiveminutes.eot');
+    src: url('/fiveminutes.eot?#iefix') format('embedded-opentype'),
+         url('/fiveminutes.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}*{
 	margin: 0;
 	padding: 0;
 }
@@ -18,7 +49,10 @@ h1, h2, h3, h4, h5, b{
 	font-weight: 100;
 	font-family: FavoritHeavyC;
 	text-shadow: 2px 2px 0px rgba(100,100,100, 0.4);
-} 
+}
+a img{
+	border: none;
+}
 a, a:active{
 	text-decoration: none;
 	color: #333333;
@@ -29,7 +63,7 @@ a:hover{
 }
 
 html{
-	font-family: FavoritHeavyC;
+	font-family: FavoritCondC;
 	font-size: 9pt;
 }
 body{
@@ -122,6 +156,7 @@ float: right;
 	background:#DDDDDD url(bg_pattern.png) repeat;
 }
 .content h1{
+	font-weight: normal;
 	font-family: FiveMinutes;
 	font-size: 80px;
 	color: #e9f5fa;
@@ -166,10 +201,9 @@ h3{
 
 }
 .youtube h2{
-	font-family: FavoritCondC;
-	font-weight: bold;
+	font-family: FavoritExtraBoldC;
 	color: #ffffff;
-	font-size: 64px;
+	font-size: 40px;
 }
 .side {
 	float: right;
