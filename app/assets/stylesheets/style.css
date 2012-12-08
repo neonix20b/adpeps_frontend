@@ -45,11 +45,18 @@
 	margin: 0;
 	padding: 0;
 }
-h1, h2, h3, h4, h5, b{
+h1, h2, h3, h4, h5 {
 	font-weight: 100;
 	font-family: FavoritHeavyC;
+}
+h1, h2, h3{
 	text-shadow: 2px 2px 0px rgba(100,100,100, 0.4);
 }
+b{
+	font-weight: 100;
+	font-family: FavoritHeavyC;
+}
+
 a img{
 	border: none;
 }
@@ -63,7 +70,7 @@ a:hover{
 }
 
 html{
-	font-family: FavoritCondC;
+	font-family: FavoritHeavyC;
 	font-size: 9pt;
 }
 body{
@@ -265,7 +272,7 @@ h3{
 #page2{
 	background:#DDDDDD url(bg_pattern.png) repeat; /*url(background2.png)  url(bg_pattern.jpg)*/
 }
-#page2 h2{
+#page2 h4{
 	color: #339900;
 	background: no-repeat left top;
 	height: 60px;
@@ -278,13 +285,14 @@ h3{
 	margin: 0px 55px;
 
 }
-#page2 .news .one h2{
+
+#page2 .news .one h4{
 	background-image: url(page2icon1.png);
 }
-#page2 .news .two h2{
+#page2 .news .two h4{
 	background-image: url(page2icon2.png);
 }
-#page2 .news .three h2{
+#page2 .news .three h4{
 	background-image: url(page2icon2.png);
 }
 #page2 div ul{
@@ -314,7 +322,7 @@ h3{
 	width: 300px;
 	margin: 0 20px;
 }
-.facts2 div h2 {
+.facts2 div h4 {
 	color: #660000;
 	font-size: 24px;
 }
