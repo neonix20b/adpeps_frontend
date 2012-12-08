@@ -44,13 +44,29 @@ jQuery(document).ready(function($) {
 	$("#cb4").css({'display':'none'});
 	oldPage=-1;
 	activatePage(curPage);
+	$(".bottom_link").css({'position':'fixed'});
+	window.setInterval(bigBottom, speed*5);
+	//bigBottom();
 
 	// jQuery(window).scroll(function(){
 	// 	scrolling();
 	// });
 //-------------------------------------------------
 }); //document.ready
-
+function bigBottom(){
+	var winHeight=$(window).height();
+	var bottom_height=winHeight-$(".bottom_link").height()-10;
+	$("#page"+oldPage+"bottom").animate({"top": bottom_height-10}, speed, function(){
+    		smallBottom();
+    });
+};
+function smallBottom(){
+	var winHeight=$(window).height();
+	var bottom_height=winHeight-$(".bottom_link").height()-10;
+	$("#page"+oldPage+"bottom").animate({"top": bottom_height}, speed, function(){
+    		//bigBottom();
+    	});
+};
 function scrolling(){
 	if (oldPage > 2 )
 		oldPage = 2;
@@ -86,6 +102,9 @@ function setPositions(page){
 	$("#cb2").css({"opacity":0.5,'position':'absolute','z-index':'10', "left":winWidth-621, "top":0});
 	$("#cb3").css({'position':'fixed','z-index':'10', "left":winWidth-200, "top":winHeight-200});
 	$("#cb4").css({"opacity":0.5,'position':'fixed','z-index':'10', "left":0, "top":winHeight-191});
+
+	if(curPage==10 && $('body').height() <	$(window).height())
+		$('#page10').css({"height": $(window).height()-294});
 };
 function move_iphone(pos){
 	$(".iphone").animate({'background-position': pos}, 200 );
